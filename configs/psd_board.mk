@@ -26,7 +26,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 endif
 
 # Custom toolchain building for kernel.  Uncommit the ifeq/endif if your building with another 4.9 toolchian
+ifeq ($(PSD_MEMBER),true)
 GCC_VERSION_ARM := 4.9
+else
+GCC_VERSION_ARM := 4.8
+endif
 
 SM_ARM_PATH := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-eabi-$(GCC_VERSION_ARM)
 SM_ARM := $(shell $(SM_ARM_PATH)/bin/arm-eabi-gcc --version)
