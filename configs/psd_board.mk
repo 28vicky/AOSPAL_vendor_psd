@@ -29,7 +29,7 @@ endif
 ifeq ($(PSD_MEMBER),true)
 GCC_VERSION_ARM := 4.9
 else
-GCC_VERSION_ARM := 4.8
+GCC_VERSION_ARM := 4.6
 endif
 
 SM_ARM_PATH := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-eabi-$(GCC_VERSION_ARM)
