@@ -15,6 +15,9 @@
 ifeq (psd_a510,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/psd_a510.mk
 endif
+ifeq (psd_janice,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/psd_janice.mk
+endif
 ifeq (psd_a700,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/psd_a700.mk
 endif
